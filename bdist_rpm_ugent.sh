@@ -3,6 +3,8 @@
 rm -Rf dist build
 python setup.py clean bdist_rpm
 
+package=graphtool
+
 rpm_target=`ls dist/${package}*noarch.rpm`
 rpm_target_name=`basename ${rpm_target}`
 
